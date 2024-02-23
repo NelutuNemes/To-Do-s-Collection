@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List-JavaScript-Version 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2>Welcome!</h2>
+        <h2>Let's introduce ourselves :</h2>
+        <br />
+        <input type="text" id="user-name" placeholder="Your name" />
+        <button id="get-name-button" onclick="getUserName()">Continue</button>
+      </div>
+    </div>
+
+    <header>
+      <div id="greet-user">To Do list App</div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>To Do List:</h1>
+        <h2 id="my-date"></h2>
+        <h2 id="my-hour"><button id="check-time-button">⌚</button></h2>
+
+        <div class="input-block">
+          <!-- Input for adding a new task -->
+          <input type="text" id="new-task-input" placeholder="enter new task" />
+          <!-- Button to add a new task -->
+          <button id="add-task-button">Add</button>
+        </div>
+
+        <!-- Task list -->
+        <div class="task-list-block">
+          <ul id="task-list"></ul>
+        </div>
+
+        <!-- Display the total number of tasks and
+        the number of unfinished tasks -->
+        <div class="status">
+          <p>Total : <span id="total-task">0</span></p>
+          <p>Unfinished : <span id="incomplete-task">0</span></p>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
