@@ -130,9 +130,6 @@ function init() {
   updateTasksCount();
 }
 
-finishedTask.addEventListener("onChange", getValueSolved);
-
-function getValueSolved() {}
 
 function congrats() {
   titleElement.innerText = "Well done, you just finished a task !";
